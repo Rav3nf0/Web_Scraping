@@ -1,10 +1,15 @@
+# Image Site Downloader
+# Write a program that goes to a photo-sharing site like Flickr or Imgur, searches for a category of photos, and then downloads all the resulting images.
+
+
 import requests,sys,os,bs4
 
 url='http://imgur.com/search?q='
 os.makedirs('imgur_img', exist_ok=True)
 
 print('downloading page %s...' % url)
-##headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36'} 
+#we specify the user agent to avoid errors 
+#headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36'} 
 
 res=requests.get(url + ' '.join(sys.argv[1:])) #takes the search keyword from the command line
 res.raise_for_status
