@@ -1,3 +1,8 @@
+# Command Line Emailer
+# Write a program that takes an email address and string of text on the command line and then,
+# using selenium, logs in to your email account and sends an email of the string to the provided address.
+
+
 import os,requests,time,bs4,sys
 from selenium import webdriver
 browser=webdriver.Firefox()
