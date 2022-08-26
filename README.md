@@ -1,4 +1,4 @@
 # Web_Scraping
 
-Inspired by AI Sweigart's Automate the Boring Stuff with Python: Chapter 12
+The projects and the solutions of Al Sweigart's Automate the Boring Stuff with Python: Chapter 12
  
